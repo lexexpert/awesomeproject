@@ -33,7 +33,6 @@ export default class App extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     justifyContent: 'flex-start',
-    alignItems: 'center',
     backgroundColor: '#FFFFFF',
     minHeight: '100%'
   }
