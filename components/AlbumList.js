@@ -12,7 +12,11 @@ class AlbumList extends React.Component {
     }
 
     renderAlbums() {
-        return this.state.albums.map(album => <AlbumDetail album={album}>{album.title}</AlbumDetail> );
+        return this.state.albums.map(album =>
+            <AlbumDetail album={album} key={album.title}>
+                {album.title}
+            </AlbumDetail>
+        );
     }
 
     render() {
